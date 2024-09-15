@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Sign in </title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="icon.png">
+    </head>
+
+    <body>
+        <div class="sigform">
+            <form action="">
+                <h1> Sign in </h1>
+                <div class = "pics">
+                        <img src = "pass.png">
+                </div>
+                    <div class = "pics2"> 
+                        <img src = "pass.png"> 
+                    </div>
+                    <div class = "pics1">
+                        <img src = "email.png">
+                    </div>
+                
+                <div class = "input-box">
+                    <input type = "text" placeholder="Enter your Email Address" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="ps" placeholder="Enter Password" required>
+                  <img src="eyep.png" id="eyec">
+                </div>
+                <script>
+                    let eyec = document.getElementById("eyec");
+                    let ps = document.getElementById("ps");
+                
+                    eyec.onclick = function(){
+                        if(ps.type == "password"){
+                            ps.type = "text";
+                            eyec.src = "eye.png";
+                          
+                        }else{
+                            ps.type = "password";
+                            eyec.src ="eyep.png"       
+                        }
+                    }
+                </script>
+                <div class="input-box">
+                    <input type="password" id="cps" placeholder="Confirm Password" required>
+                  <img src="eyep.png" id="eyez">
+                </div>
+                <script>
+                    let eyez = document.getElementById("eyez");
+                    let cps = document.getElementById("cps");
+                
+                    eyez.onclick = function(){
+                        if(cps.type == "password"){
+                            cps.type = "text";
+                            eyez.src = "eye.png";
+                          
+                        }else{
+                            cps.type = "password";
+                            eyez.src ="eyep.png"       
+                        }
+                    }
+                </script>
+                <div class = "remember-forgot">
+                <label> <input type = "checkbox"> Remember me </label> 
+                </div>
+                <div class = "fp">
+                        <a href=""> Forgot Password</a>
+                </div>
+                <button type = "submit" class = "bttn"> Sign in </button>
+                <button type = "submit" class = "btn"> Cancel </button>
+                <div class = "register-link">
+                    <p> Still not a member?
+                        <a href = "index.html"> Sign up now! </a> 
+                </div>
+                <div class = "terms">
+                    <label> <input type = "checkbox"> Before signing in your account, please read the
+                        <a href = "#"> Terms </a>
+                        and follow our 
+                        <a href = "#"> Privacy Statement. </a> </label> 
+                    </div>
+
+                <div class = "socials">
+                    <div class = "fb"> 
+                        <a href="https://www.facebook.com/" target="_blank">
+                        <img src = "fb.png"> </a>
+                    </div>
+                    <div class = "ig"> 
+                        <a href="https://accountscenter.instagram.com/?entry_point=app_settings" target="_blank">
+                        <img src = "ig.png"> </a>
+                    </div>
+                    <div class = "twt"> 
+                        <a href="https://twitter.com/i/flow/signup?lang=en" target="_blank">
+                        <img src = "twt.png"> </a>
+                    </div>
+                    <div class = "yt"> 
+                        <a href="https://www.youtube.com/account" target="_blank">
+                        <img src = "yt.png"> </a>
+                    </div>  
+                    <div class = "cp">
+                        <h2> Copyright 2024 </h2>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
